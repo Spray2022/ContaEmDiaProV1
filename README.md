@@ -33,9 +33,11 @@ Instalação e Configuração
 2. Clonar o Repositório
 Execute o comando abaixo para clonar o repositório:   
 User:    
-Senha: 
-git clone https://github.com/Spray2022/ContaEmDiaProV1.git
-3. Configurar a Base de Dados
+Senha:
+
+git clone
+https://github.com/Spray2022/ContaEmDiaProV1.git
+4. Configurar a Base de Dados
 1.	Abra o projeto no Visual Studio 2022.
 2.	Edite o arquivo appsettings.json para incluir a string de conexão do banco de dados.
 3.	Execute o comando para aplicar as migrações: 
