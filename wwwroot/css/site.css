@@ -1,0 +1,134 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+footer {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Ajuste no container do formulário */
+/* Estilização do Formulário com Gradiente */
+.login-container {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradiente roxo para azul */
+    color: #fff; /* Texto branco para contraste */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 30px; /* Espaçamento interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    max-width: 400px; /* Largura máxima */
+    width: 100%;
+    margin: 10vh auto; /* Centraliza vertical e horizontalmente */
+    text-align: center; /* Centraliza textos */
+}
+
+/* Ajustar os inputs e botões */
+.login-container .form-label {
+    color: #fff; /* Mantém as labels em branco */
+}
+
+.login-container .form-control {
+    background-color: rgba(255, 255, 255, 0.9); /* Inputs com fundo levemente opaco */
+    border: none; /* Remove bordas padrão */
+    border-radius: 5px; /* Bordas arredondadas nos inputs */
+    color: #333; /* Cor do texto */
+}
+
+.login-container .btn {
+    background-color: #ffffff; /* Botão branco */
+    color: #6a11cb; /* Texto roxo */
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+    .login-container .btn:hover {
+        background-color: #e0e0e0; /* Efeito hover */
+    }
+
+login-container .form-control {
+    background-color: rgba(255, 255, 255, 0.9); /* Inputs com fundo levemente opaco */
+    border: none; /* Remove bordas padrão */
+    border-radius: 5px; /* Bordas arredondadas nos inputs */
+    color: #333; /* Cor do texto */
+}
+
+.login-container .btn {
+    background-color: #ffffff; /* Botão branco */
+    color: #6a11cb; /* Texto roxo */
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+    .login-container .btn:hover {
+        background-color: #e0e0e0; /* Efeito hover */
+    }
+
+/* Ajustes do Formulário de Reisto */
+.register-container {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradiente roxo para azul */
+    color: #fff; /* Texto branco para contraste */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 30px; /* Espaçamento interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    max-width: 800px; /* Largura máxima */
+    width: 100%;
+    margin: 5vh auto; /* Ajusta o espaçamento vertical */
+    text-align: center; /* Centraliza textos */
+    flex-grow: 1; /* Ocupa o espaço disponível */
+    display: flex; /* Ativa flexbox */
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+}
+
+
+    .register-container .form-label {
+        color: #fff; /* Mantém as labels em branco */
+    }
+
+    .register-container .form-control {
+        background-color: rgba(255, 255, 255, 0.9); /* Inputs com fundo levemente opaco */
+        border: none; /* Remove bordas padrão */
+        border-radius: 5px; /* Bordas arredondadas nos inputs */
+        color: #333; /* Cor do texto */
+    }
+
+    .register-container .btn {
+        background-color: #ffffff; /* Botão branco */
+        color: #6a11cb; /* Texto roxo */
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+        .register-container .btn:hover {
+            background-color: #e0e0e0; /* Efeito hover */
+        }
+
+.navbar {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+    .nav-link:hover {
+        color: #ffd700; /* Amarelo dourado ao passar o mouse */
+    }
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}

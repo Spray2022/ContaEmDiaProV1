@@ -1,0 +1,39 @@
+﻿@using ContaEmDiaProV1.Areas.PlanoDeContas.Models
+@model IEnumerable<Subconta>
+
+@{
+    ViewData["Title"] = "Subcontas";
+}
+
+<h1>Subcontas</h1>
+
+<p>
+    <a href="@Url.Action("Create")" class="btn btn-primary">Criar nova Subconta</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>CodigoSubconta</th>
+            <th>NomeSubconta</th>
+            <th>Descrição</th>
+            <th>Conta</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CodigoSubconta</td>
+                <td>@item.NomeSubconta</td>
+                <td>@item.Descricao</td>
+                <td>@item.Conta.NomeConta</td>
+                <td>
+                    <a href="@Url.Action("Edit", new { id = item.Id })" class="btn btn-warning">Editar</a>
+                    <a href="@Url.Action("Delete", new { id = item.Id })" class="btn btn-danger">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Plano de Contas";
+    Layout = "~/Areas/Principal/Views/Shared/_LayoutPrincipal.cshtml";
+}
+
+<h2>Plano de Contas</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Classe</th>
+            <th>Descrição</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Aqui será gerada a lista de Classes -->
+        @foreach (var classe in Model.Classes)
+        {
+            <tr>
+                <td>@classe.Nome</td>
+                <td>@classe.Descricao</td>
+                <td>
+                    <a href="@Url.Action("EditClasse", "PlanoDeContas", new { id = classe.Id })" class="btn btn-primary">Editar</a>
+                    <a href="@Url.Action("DeleteClasse", "PlanoDeContas", new { id = classe.Id })" class="btn btn-danger">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("CreateClasse", "PlanoDeContas")" class="btn btn-success">Adicionar Nova Classe</a>

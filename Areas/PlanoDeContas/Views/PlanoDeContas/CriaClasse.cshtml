@@ -1,0 +1,31 @@
+﻿@model ContaEmDiaProV1.Areas.PlanoDeContas.Models.Classe
+
+@{
+    ViewData["Title"] = "Criar Classe";
+    Layout = "~/Areas/Principal/Views/Shared/_LayoutPrincipal.cshtml";
+}
+
+<h2>Criar Nova Classe</h2>
+
+<form asp-action="CreateClasse" method="post">
+    <div class="form-group">
+        <label for="CodigoClasse">Classe</label>
+        <input asp-for="CodigoClasse" class="form-control" />
+        <span asp-validation-for="CodigoClasse" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="NomeClasse">Nome</label>
+        <input asp-for="NomeClasse" class="form-control" />
+        <span asp-validation-for="NomeClasse" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Descricao">Descrição</label>
+        <input asp-for="Descricao" class="form-control" />
+        <span asp-validation-for="Descricao" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    <a href="@Url.Action("Index", "PlanoDeContas")" class="btn btn-secondary">Cancelar</a>
+</form>

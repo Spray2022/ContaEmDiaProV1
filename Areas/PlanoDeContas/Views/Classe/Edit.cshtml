@@ -1,0 +1,21 @@
+﻿@model ContaEmDiaProV1.Areas.PlanoDeContas.Models.Classe
+
+@{
+    ViewData["Title"] = "Editar Classe";
+    Layout = "~/Areas/Principal/Views/Shared/_LayoutPrincipal.cshtml";
+}
+
+<h2>Editar Classe</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label for="NomeClasse">Nome da Classe</label>
+        <input type="text" asp-for="NomeClasse" class="form-control" />
+        <span asp-validation-for="NomeClasse" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    <a href="@Url.Action("Index", "Classe")" class="btn btn-secondary">Cancelar</a>
+</form>

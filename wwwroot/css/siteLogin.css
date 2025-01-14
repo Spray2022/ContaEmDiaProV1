@@ -1,0 +1,86 @@
+﻿body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Ajuste no container do formulário */
+/* Estilização do Formulário com Gradiente */
+.login-container {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradiente roxo para azul */
+    color: #fff; /* Texto branco para contraste */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 30px; /* Espaçamento interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    max-width: 400px; /* Largura máxima */
+    width: 100%;
+    margin: 10vh auto; /* Centraliza vertical e horizontalmente */
+    text-align: center; /* Centraliza textos */
+}
+
+    /* Ajustar os inputs e botões */
+    .login-container .form-label {
+        color: #fff; /* Mantém as labels em branco */
+    }
+
+    .login-container .form-control {
+        background-color: rgba(255, 255, 255, 0.9); /* Inputs com fundo levemente opaco */
+        border: none; /* Remove bordas padrão */
+        border-radius: 5px; /* Bordas arredondadas nos inputs */
+        color: #333; /* Cor do texto */
+    }
+
+    .login-container .btn {
+        background-color: #ffffff; /* Botão branco */
+        color: #6a11cb; /* Texto roxo */
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+        .login-container .btn:hover {
+            background-color: #e0e0e0; /* Efeito hover */
+        }
+
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradiente de roxo para azul */
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .login-box h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+.footer {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.gradient-custom {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradiente de roxo para azul */
+    color: #fff; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Altura reduzida para 70% da viewport */
+    width: 100%; /* Define a largura como 80% da tela */
+    margin: 10vh auto; /* Espaço no topo e embaixo */
+    border-radius: 15px; /* Bordas arredondadas para um visual mais moderno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra mais acentuada */
+}
+
+.min-vh-100 {
+    min-height: 100vh; /* Altura mínima da viewport */
+}

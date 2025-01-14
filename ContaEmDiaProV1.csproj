@@ -1,0 +1,222 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-ContaEmDiaProV1-4c7b782f-f47c-4a96-b744-1328c270af34</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Areas\NovaPasta\**" />
+    <Content Remove="Areas\NovaPasta\**" />
+    <EmbeddedResource Remove="Areas\NovaPasta\**" />
+    <None Remove="Areas\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.css" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.css.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.css" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.css.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.min.css" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.min.css" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.min.css.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.css" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.css.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.min.css" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.css" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.css.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.min.css" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.min.css.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.css" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.css.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.min.css" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap.css" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap.css.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap.min.css" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap.min.css.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap.rtl.css" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap.rtl.css.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.esm.js" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.esm.js.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.js" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.js.map" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.min.js" />
+    <Content Remove="C:\Users\Stm.lab comp\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.min.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-grid.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-grid.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-grid.min.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-grid.min.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-grid.rtl.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-reboot.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-reboot.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-reboot.min.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-reboot.rtl.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-utilities.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-utilities.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-utilities.min.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-utilities.min.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-utilities.rtl.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap.min.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap.min.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap.rtl.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap.rtl.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap.rtl.min.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\bootstrap.rtl.min.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\dashboard.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\dashboard.rtl.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\grid.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\headers.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\site.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\siteLogin.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\css\sitePrincipal.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\favicon.ico" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\js\sidebars.js" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\js\site.js" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\bootstrap\LICENSE" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\jquery-validation\LICENSE.md" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\jquery\dist\jquery.js" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\jquery\dist\jquery.min.js" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\jquery\dist\jquery.min.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\jquery\dist\jquery.slim.js" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\jquery\dist\jquery.slim.min.js" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\jquery\dist\jquery.slim.min.map" />
+    <Content Include="Areas\PlanoDeContas\wwwroot\lib\jquery\LICENSE.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AngularJS.Core" Version="1.8.2" />
+    <PackageReference Include="Blazor.Bootstrap" Version="3.2.0" />
+    <PackageReference Include="bootstrap" Version="5.3.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Bancos\Controllers\" />
+    <Folder Include="Areas\Bancos\Data\" />
+    <Folder Include="Areas\Bancos\Views\" />
+    <Folder Include="Areas\Clientes\Controllers\" />
+    <Folder Include="Areas\Clientes\Data\" />
+    <Folder Include="Areas\Clientes\Views\" />
+    <Folder Include="Areas\ContasPagar\Controllers\" />
+    <Folder Include="Areas\ContasPagar\Data\" />
+    <Folder Include="Areas\ContasPagar\Views\" />
+    <Folder Include="Areas\ContasReceber\Controllers\" />
+    <Folder Include="Areas\ContasReceber\Data\" />
+    <Folder Include="Areas\ContasReceber\Views\" />
+    <Folder Include="Areas\Faturacao\Controllers\" />
+    <Folder Include="Areas\Faturacao\Data\" />
+    <Folder Include="Areas\Faturacao\Views\" />
+    <Folder Include="Areas\Fornecedores\Controllers\" />
+    <Folder Include="Areas\Fornecedores\Data\" />
+    <Folder Include="Areas\Fornecedores\Views\" />
+    <Folder Include="Areas\Lancamentos\Controllers\" />
+    <Folder Include="Areas\Lancamentos\Data\" />
+    <Folder Include="Areas\Lancamentos\Views\" />
+    <Folder Include="Areas\PlanoDeContas\Data\" />
+    <Folder Include="Areas\Principal\Data\" />
+    <Folder Include="Areas\Principal\Models\" />
+    <Folder Include="Areas\Relatorios\Controllers\" />
+    <Folder Include="Areas\Relatorios\Data\" />
+    <Folder Include="Areas\Relatorios\Views\" />
+    <Folder Include="Areas\Transacoes\Controllers\" />
+    <Folder Include="Areas\Transacoes\Data\" />
+    <Folder Include="Areas\Transacoes\Views\" />
+    <Folder Include="Areas\Usuarios\Controllers\" />
+    <Folder Include="Areas\Usuarios\Data\" />
+    <Folder Include="Areas\Usuarios\Views\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\sidebars.css" />
+  </ItemGroup>
+
+</Project>

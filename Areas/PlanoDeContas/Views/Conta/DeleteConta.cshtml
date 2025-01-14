@@ -1,0 +1,20 @@
+﻿@model ContaEmDiaProV1.Areas.PlanoDeContas.Models.Conta
+
+@{
+    ViewData["Title"] = "Excluir Conta";
+}
+
+<h2>Excluir Conta</h2>
+
+<h4>Tem certeza de que deseja excluir a conta abaixo?</h4>
+<div>
+    <strong>@Model.NomeConta</strong> - @Model.Descricao
+</div>
+
+<form asp-action="DeleteContaConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="ClasseId" />
+
+    <button type="submit" class="btn btn-danger">Excluir</button>
+    <a href="@Url.Action("IndexConta", "PlanoDeContas", new { classeId = Model.ClasseId })" class="btn btn-secondary">Cancelar</a>
+</form>

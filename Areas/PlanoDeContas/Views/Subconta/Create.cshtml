@@ -1,0 +1,31 @@
+﻿@model ContaEmDiaProV1.Areas.PlanoDeContas.Models.Subconta
+
+@{
+    ViewData["Title"] = "Adicionar Nova Conta";
+    Layout = "~/Areas/Principal/Views/Shared/_LayoutPrincipal.cshtml";
+}
+
+<h2>Adicionar Nova Subconta</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="ContaId">Conta</label>
+        <select asp-for="ContaId" class="form-control" asp-items="ViewBag.Contass"></select>
+        <span asp-validation-for="ContaId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="CodigoSubconta">Codigo da Subconta</label>
+        <input type="text" asp-for="CodigoSubconta" class="form-control" />
+        <span asp-validation-for="CodigoSubconta" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="NomeSubconta">Nome da Subconta</label>
+        <input type="text" asp-for="NomeSubconta" class="form-control" />
+        <span asp-validation-for="NomeSubconta" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    <a href="@Url.Action("Index", "Subconta")" class="btn btn-secondary">Cancelar</a>
+</form>

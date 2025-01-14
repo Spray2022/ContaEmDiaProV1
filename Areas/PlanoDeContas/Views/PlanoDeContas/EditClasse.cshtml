@@ -1,0 +1,26 @@
+﻿@model ContaEmDiaProV1.Areas.PlanoDeContas.Models.Classe
+
+@{
+    ViewData["Title"] = "Editar Classe";
+}
+
+<h2>Editar Classe</h2>
+
+<form asp-action="EditClasse" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label for="Nome">Nome</label>
+        <input asp-for="Nome" class="form-control" />
+        <span asp-validation-for="Nome" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Descricao">Descrição</label>
+        <input asp-for="Descricao" class="form-control" />
+        <span asp-validation-for="Descricao" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+    <a href="@Url.Action("Index", "PlanoDeContas")" class="btn btn-secondary">Cancelar</a>
+</form>

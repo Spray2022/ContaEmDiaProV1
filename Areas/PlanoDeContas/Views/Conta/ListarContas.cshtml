@@ -1,0 +1,36 @@
+﻿@model IEnumerable<ContaEmDiaProV1.Areas.PlanoDeContas.Models.Conta>
+
+@{
+    ViewData["Title"] = "Contas";
+    var classeId = ViewBag.ClasseId;
+}
+
+<h2>Contas da Classe</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Codigo</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var conta in Model)
+        {
+            <tr>
+                <td>@conta.CodigoConta</td>
+                <td>@conta.NomeConta</td>
+                <td>@conta.Descricao</td>
+                <td>
+                    <a href="@Url.Action("EditConta", "PlanoDeContas", new { id = conta.Id })" class="btn btn-primary">Editar</a>
+                    <a href="@Url.Action("DeleteConta", "PlanoDeContas", new { id = conta.Id })" class="btn btn-danger">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("CreateConta", "PlanoDeContas", new { classeId = classeId })" class="btn btn-success">Adicionar Nova Conta</a>
+<a href="@Url.Action("Index", "PlanoDeContas")" class="btn btn-secondary">Voltar para Classes</a>

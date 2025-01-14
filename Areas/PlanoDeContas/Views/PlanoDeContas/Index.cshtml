@@ -1,0 +1,36 @@
+﻿@model IEnumerable<ContaEmDiaProV1.Areas.PlanoDeContas.Models.Classe>
+
+@{
+    ViewData["Title"] = "Plano de Contas";
+    Layout = "~/Areas/Principal/Views/Shared/_LayoutPrincipal.cshtml";
+}
+
+<h2>@ViewData["Title"]</h2>
+<div class="container">
+    <a href="@Url.Action("Plano", "PlanoDeContas")" class="btn btn-primary mb-3">Plano Geral</a>
+    <a href="@Url.Action("CriaClasse", "PlanoDeContas")" class="btn btn-primary mb-3">Adicionar Classe</a>
+    <a href="@Url.Action("Create", "Conta")" class="btn btn-primary mb-3">Adicionar Conta</a>
+    <a href="@Url.Action("Create", "Subconta")" class="btn btn-primary mb-3">Adicionar Subconta</a>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Classe</th>
+                <th>Nome da Classe</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var classe in Model)
+            {
+                <tr>
+                    <td>@classe.CodigoClasse</td>
+                    <td>
+                        <a href="@Url.Action("Edit", "PlanoDeContas", new { id = classe.Id })" class="btn btn-warning">Editar</a>
+                        <a href="@Url.Action("Delete", "PlanoDeContas", new { id = classe.Id })" class="btn btn-danger">Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
